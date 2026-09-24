@@ -18,17 +18,17 @@ const Projects = () => {
   return (
    <section 
       id="projects" 
-      className="min-h-screen flex items-center justify-center py-20 bg-slate-50 dark:bg-slate-800"
+      className="py-16 bg-slate-50 dark:bg-slate-800"
     >
-      <div className="max-w-6xl mx-auto px-6 w-full">
-        <h2 className="text-5xl font-bold mb-4 text-center text-slate-800 dark:text-white">
+      <div className="px-6 max-w-6xl mx-auto w-full">
+        <h2 className="mb-4 text-5xl font-bold text-center text-slate-800 dark:text-white">
           Projects
         </h2>
-        <p className="text-slate-500 dark:text-slate-400 text-center mb-16">
+        <p className="mb-6 text-slate-500 text-center dark:text-slate-400">
           Some things I've built
         </p>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-4 gap-8">
           {projects.map((project, idx) => (
             <ProjectCard key={idx} project={project} />
           ))}

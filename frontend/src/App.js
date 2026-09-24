@@ -31,7 +31,7 @@ const scrollToSection = (id) => {
 
   element.scrollIntoView({
     behavior: "smooth",
-    block: "center",   // smoother than "start"
+    block: "start",   // smoother than "start"
     inline: "nearest"
   });
 };
