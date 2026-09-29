@@ -104,7 +104,7 @@ CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 ### 4. Start the backend
 
 ```bash
-npm start
+npm run dev
 ```
 
 The backend API will run at:
