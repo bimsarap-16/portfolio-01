@@ -99,7 +99,7 @@ CLOUDINARY_API_KEY=your_cloudinary_api_key
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 ```
 
-**Keep your `.env` file private. Never commit credentials to GitHub.**
+
 
 ### 4. Start the backend
 
