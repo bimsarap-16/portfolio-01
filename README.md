@@ -150,7 +150,7 @@ Some endpoints require admin authentication.
 
 ## 🗺️ Future Improvements
 
-* [👤] Complete portfolio UI and responsive design
+* [ ] Complete portfolio UI and responsive design
 * [ ] Build an admin dashboard
 * [ ] Improve project and skill management
 * [ ] Add form validation and error handling
