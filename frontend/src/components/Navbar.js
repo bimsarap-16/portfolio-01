@@ -12,8 +12,8 @@ export default function Navbar({ activeSection, scrolled, scrollToSection }) {
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/95 dark:bg-slate-900/95 backdrop-blur-md shadow-sm py-2"
-          : "bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm py-3"
+          ? "bg-white/95 dark:bg-slate-900/95 backdrop-blur-md shadow-sm py-3"
+          : "bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm py-5"
       }`}
     >
       <div className="px-6 max-w-7xl mx-auto">

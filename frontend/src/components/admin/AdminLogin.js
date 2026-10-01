@@ -21,22 +21,22 @@ const AdminLogin = ({ onLogin }) => {
   };
 
   return (
-    <div className="min-h-screen bg-[#F0EEE9] flex items-center justify-center px-4">
+    <div className="px-4 min-h-screen bg-[#F0EEE9] justify-center flex items-center">
       <div className="max-w-md w-full">
         {/* Login Card */}
-        <div className="bg-white rounded-2xl shadow-lg p-8">
+        <div className="p-8 bg-white rounded-2xl shadow-lg">
           {/* Header */}
-          <div className="text-center mb-8">
-            <div className="bg-[#316263] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <div className="mb-8 text-center">
+            <div className="mb-4 bg-[#316263] w-16 h-16 rounded-full justify-center mx-auto flex items-center">
               <Lock className="text-white" size={28} />
             </div>
             <h2 className="text-3xl font-bold text-[#316263]">Admin Login</h2>
-            <p className="text-gray-600 mt-2">Sign in to manage your portfolio</p>
+            <p className="mt-2 text-gray-600">Sign in to manage your portfolio</p>
           </div>
 
           {/* Error Message */}
           {error && (
-            <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg mb-4">
+            <div className="px-4 py-3 mb-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
               {error}
             </div>
           )}
@@ -44,16 +44,16 @@ const AdminLogin = ({ onLogin }) => {
           {/* Login Form */}
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Email Address
+              <label className="mb-2 text-sm font-medium text-gray-700 block">
+                Email
               </label>
               <div className="relative">
-                <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+                <Mail className="top-1/2 text-gray-400 absolute left-3 transform -translate-y-1/2" size={20} />
                 <input
                   type="email"
                   value={credentials.email}
                   onChange={(e) => setCredentials({ ...credentials, email: e.target.value })}
-                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#316263] focus:border-transparent"
+                  className="py-3 w-full border border-gray-300 rounded-lg pl-10 pr-4 focus:outline-none focus:ring-2 focus:ring-[#316263] focus:border-transparent"
                   placeholder="admin@portfolio.com"
                   required
                 />
@@ -61,16 +61,16 @@ const AdminLogin = ({ onLogin }) => {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label className="mb-2 text-sm font-medium text-gray-700 block">
                 Password
               </label>
               <div className="relative">
-                <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+                <Lock className="top-1/2 text-gray-400 absolute left-3 transform -translate-y-1/2" size={20} />
                 <input
                   type="password"
                   value={credentials.password}
                   onChange={(e) => setCredentials({ ...credentials, password: e.target.value })}
-                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#316263] focus:border-transparent"
+                  className="py-3 w-full border border-gray-300 rounded-lg pl-10 pr-4 focus:outline-none focus:ring-2 focus:ring-[#316263] focus:border-transparent"
                   placeholder="Enter your password"
                   required
                 />
@@ -79,7 +79,7 @@ const AdminLogin = ({ onLogin }) => {
 
             <button
               type="submit"
-              className="w-full bg-[#316263] text-white py-3 rounded-lg font-medium hover:bg-[#2a5556] transition-all shadow-lg"
+              className="py-3 w-full bg-[#316263] text-white rounded-lg font-medium shadow-lg hover:bg-[#2a5556] transition-all"
             >
               Sign In
             </button>
@@ -87,7 +87,7 @@ const AdminLogin = ({ onLogin }) => {
 
           {/* Demo Credentials */}
           <div className="mt-6 p-4 bg-gray-50 rounded-lg">
-            <p className="text-sm text-gray-600 font-medium mb-1">Demo Credentials:</p>
+            <p className="mb-1 text-sm text-gray-600 font-medium">Demo Credentials:</p>
             <p className="text-xs text-gray-500">Email: admin@portfolio.com</p>
             <p className="text-xs text-gray-500">Password: admin123</p>
           </div>

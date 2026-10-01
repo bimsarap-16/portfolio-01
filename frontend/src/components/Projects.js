@@ -18,13 +18,13 @@ const Projects = () => {
   return (
    <section 
       id="projects" 
-      className="py-16 bg-slate-50 dark:bg-slate-800"
+      className="py-40 bg-slate-50 dark:bg-slate-800"
     >
-      <div className="px-6 max-w-6xl mx-auto w-full">
+      <div className="px-2 max-w-6xl mx-auto w-full">
         <h2 className="mb-4 text-5xl font-bold text-center text-slate-800 dark:text-white">
           Projects
         </h2>
-        <p className="mb-6 text-slate-500 text-center dark:text-slate-400">
+        <p className="mb-10 text-slate-500 text-center dark:text-slate-400">
           Some things I've built
         </p>
         

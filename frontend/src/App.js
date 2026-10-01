@@ -27,12 +27,19 @@ function Portfolio() {
   
 const scrollToSection = (id) => {
   const element = document.getElementById(id);
+
   if (!element) return;
 
-  element.scrollIntoView({
-    behavior: "smooth",
-    block: "start",   // smoother than "start"
-    inline: "nearest"
+  const navbarHeight = document.querySelector("nav")?.offsetHeight || 0;
+
+  const top =
+    element.getBoundingClientRect().top +
+    window.scrollY -
+    navbarHeight;
+
+  window.scrollTo({
+    top,
+    behavior: "smooth"
   });
 };
 
